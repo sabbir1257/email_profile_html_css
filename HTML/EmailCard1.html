@@ -6,112 +6,202 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Business Card Template</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="../CSS/EmailCard1.css">
 </head>
 
-<body>
-    <div class="business-card">
-        <!-- Left section - Profile picture with teal background -->
-        <div class="left-section">
-            <div class="card-container">
-                <div class="gradient-bg"></div>
-                <div class="hexagon-container">
-                    <div class="hexagon-wrapper">
-                        <div class="hexagon-border"></div>
-                        <div class="hexagon-mask"></div>
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-                            alt="Profile" class="profile-img">
+<body
+    style="margin: 0; padding: 20px; box-sizing: border-box; font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; background-color: #f5f5f5;">
+
+    <!-- Main Business Card Container -->
+    <div
+        style="display: flex; width: 1100px; height: 400px; background: white; overflow: visible; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); border-radius: 16px; position: relative;">
+
+        <!-- LEFT SECTION - Teal Background with Wave Curve and Hexagon Profile -->
+        <div style="width: 38%; height: 100%; position: relative; overflow: visible;">
+            <!-- Teal gradient background -->
+            <div
+                style="position: absolute; width: 100%; height: 100%; background: linear-gradient(135deg, #0a5c77 0%, #02b3a6 100%); border-radius: 16px 0 0 16px;">
+            </div>
+
+            <!-- Top wave curve extending right -->
+            <div
+                style="position: absolute; right: -50px; top: -5px; width: 100px; height: 210px; background: linear-gradient(135deg, #0a5c77 0%, #02b3a6 100%); border-radius: 0 0 50% 50%;">
+            </div>
+
+            <!-- Bottom wave curve extending right -->
+            <div
+                style="position: absolute; right: -50px; bottom: -5px; width: 100px; height: 210px; background: linear-gradient(135deg, #0a5c77 0%, #02b3a6 100%); border-radius: 50% 50% 0 0;">
+            </div>
+
+            <!-- Profile Picture Container with Hexagon Shape -->
+            <div
+                style="position: absolute; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; z-index: 10;">
+                <div style="position: relative; width: 200px; height: 200px;">
+                    <!-- White hexagon border -->
+                    <div
+                        style="position: absolute; width: 100%; height: 100%; background: white; -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);">
                     </div>
+
+                    <!-- Profile Image in hexagon shape -->
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
+                        alt="David John"
+                        style="position: absolute; width: 90%; height: 90%; top: 5%; left: 5%; object-fit: cover; -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);">
                 </div>
             </div>
         </div>
 
-        <!-- Right section - Contact information -->
-        <div class="right-section">
-            <div class="contact-grid">
-                <div class="name-section">
-                    <div class="name-title">
-                        <div class="user-icon">
+        <!-- RIGHT SECTION - Contact Information -->
+        <div
+            style="width: 57%; background: white; padding: 35px 40px; display: flex; flex-direction: column; justify-content: space-between; position: relative; z-index: 5;">
+
+            <!-- Top Section: Name and Contact Details Grid -->
+            <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 20px;">
+
+                <!-- Left Column: Name, Title, Company, Social Icons -->
+                <div style="display: flex; flex-direction: column;">
+                    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 16px;">
+                        <!-- User Icon -->
+                        <div
+                            style="background: #20B2AA; border-radius: 8px; width: 48px; height: 48px; min-width: 48px; color: white; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 8px rgba(32, 178, 170, 0.3);">
                             <i class="fas fa-user fa-lg"></i>
                         </div>
-                        <div>
-                            <h1 class="name">David John</h1>
-                            <p class="title">Managing Director</p>
-                            <p class="company">InReality, Inc.</p>
-                            <div class="divider"></div>
-                            <!-- Social media icons -->
-                            <div class="social-icons">
-                                <div class="social-icon">
-                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    <div class="social-corner"></div>
+
+                        <!-- Name, Title, Company -->
+                        <div style="flex: 1;">
+                            <h1
+                                style="margin: 0 0 4px 0; font-size: 36px; font-weight: bold; color: #333; font-family: Arial, sans-serif; line-height: 1.1;">
+                                David John</h1>
+                            <p style="margin: 0 0 2px 0; font-size: 18px; color: #333; font-family: Arial, sans-serif;">
+                                Managing Director</p>
+                            <p
+                                style="margin: 0 0 12px 0; font-size: 18px; color: #333; font-family: Arial, sans-serif;">
+                                InReality, Inc.</p>
+
+                            <!-- Teal divider line -->
+                            <div style="width: 80px; height: 4px; background: #20B2AA; margin-bottom: 16px;"></div>
+
+                            <!-- Social Media Icons with Corner Triangles -->
+                            <div style="display: flex; gap: 8px;">
+                                <!-- Facebook -->
+                                <div
+                                    style="position: relative; width: 32px; height: 32px; border: 1px solid #20B2AA; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                                    <a href="#"
+                                        style="width: 100%; height: 100%; color: #20B2AA; display: flex; align-items: center; justify-content: center; text-decoration: none; font-size: 14px;">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <div
+                                        style="position: absolute; bottom: 0; right: 0; width: 0; height: 0; border-bottom: 10px solid #00aba1; border-left: 10px solid transparent;">
+                                    </div>
                                 </div>
-                                <div class="social-icon">
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                    <div class="social-corner"></div>
+
+                                <!-- Instagram -->
+                                <div
+                                    style="position: relative; width: 32px; height: 32px; border: 1px solid #20B2AA; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                                    <a href="#"
+                                        style="width: 100%; height: 100%; color: #20B2AA; display: flex; align-items: center; justify-content: center; text-decoration: none; font-size: 14px;">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <div
+                                        style="position: absolute; bottom: 0; right: 0; width: 0; height: 0; border-bottom: 10px solid #00aba1; border-left: 10px solid transparent;">
+                                    </div>
                                 </div>
-                                <div class="social-icon">
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <div class="social-corner"></div>
+
+                                <!-- Twitter -->
+                                <div
+                                    style="position: relative; width: 32px; height: 32px; border: 1px solid #20B2AA; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                                    <a href="#"
+                                        style="width: 100%; height: 100%; color: #20B2AA; display: flex; align-items: center; justify-content: center; text-decoration: none; font-size: 14px;">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <div
+                                        style="position: absolute; bottom: 0; right: 0; width: 0; height: 0; border-bottom: 10px solid #00aba1; border-left: 10px solid transparent;">
+                                    </div>
                                 </div>
-                                <div class="social-icon">
-                                    <a href="#"><i class="fab fa-youtube"></i></a>
-                                    <div class="social-corner"></div>
+
+                                <!-- YouTube -->
+                                <div
+                                    style="position: relative; width: 32px; height: 32px; border: 1px solid #20B2AA; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                                    <a href="#"
+                                        style="width: 100%; height: 100%; color: #20B2AA; display: flex; align-items: center; justify-content: center; text-decoration: none; font-size: 14px;">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                    <div
+                                        style="position: absolute; bottom: 0; right: 0; width: 0; height: 0; border-bottom: 10px solid #00aba1; border-left: 10px solid transparent;">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="contact-details">
-                    <!-- Custom Rounded Dotted Border -->
-                    <div class="dotted-border">
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                        <div class="dot"></div>
+
+                <!-- Right Column: Contact Details with Dotted Line -->
+                <div style="display: flex; gap: 20px; position: relative;">
+                    <!-- Vertical Dotted Line -->
+                    <div
+                        style="display: flex; flex-direction: column; justify-content: space-between; align-items: center; padding: 4px 0;">
+                        <div style="width: 8px; height: 8px; background: #20B2AA; border-radius: 50%;"></div>
+                        <div style="width: 8px; height: 8px; background: #20B2AA; border-radius: 50%;"></div>
+                        <div style="width: 8px; height: 8px; background: #20B2AA; border-radius: 50%;"></div>
+                        <div style="width: 8px; height: 8px; background: #20B2AA; border-radius: 50%;"></div>
+                        <div style="width: 8px; height: 8px; background: #20B2AA; border-radius: 50%;"></div>
+                        <div style="width: 8px; height: 8px; background: #20B2AA; border-radius: 50%;"></div>
+                        <div style="width: 8px; height: 8px; background: #20B2AA; border-radius: 50%;"></div>
+                        <div style="width: 8px; height: 8px; background: #20B2AA; border-radius: 50%;"></div>
+                        <div style="width: 8px; height: 8px; background: #20B2AA; border-radius: 50%;"></div>
                     </div>
 
-                    <!-- Main Content -->
-                    <div class="contact-items">
+                    <!-- Contact Items -->
+                    <div style="display: flex; flex-direction: column; justify-content: space-around; flex: 1;">
                         <!-- Phone -->
-                        <div class="contact-item">
-                            <div class="contact-icon">
+                        <div style="display: flex; align-items: center; gap: 12px;">
+                            <div
+                                style="width: 40px; height: 40px; min-width: 40px; background: #20B2AA; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; box-shadow: 0 2px 6px rgba(32, 178, 170, 0.3);">
                                 <i class="fas fa-phone"></i>
                             </div>
-                            <span>012 5487 663</span>
+                            <span style="font-size: 15px; color: #333; font-family: Arial, sans-serif;">012 5487
+                                663</span>
                         </div>
 
                         <!-- Website -->
-                        <div class="contact-item">
-                            <div class="contact-icon">
+                        <div style="display: flex; align-items: center; gap: 12px;">
+                            <div
+                                style="width: 40px; height: 40px; min-width: 40px; background: #20B2AA; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; box-shadow: 0 2px 6px rgba(32, 178, 170, 0.3);">
                                 <i class="fas fa-globe"></i>
                             </div>
-                            <span>www.yoursiteurl.com</span>
+                            <span
+                                style="font-size: 15px; color: #333; font-family: Arial, sans-serif;">www.yoursiteurl.com</span>
                         </div>
 
                         <!-- Address -->
-                        <div class="contact-item">
-                            <div class="contact-icon">
+                        <div style="display: flex; align-items: center; gap: 12px;">
+                            <div
+                                style="width: 40px; height: 40px; min-width: 40px; background: #20B2AA; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; box-shadow: 0 2px 6px rgba(32, 178, 170, 0.3);">
                                 <i class="fas fa-map-marker-alt"></i>
                             </div>
-                            <span>123 Road State, Country</span>
+                            <span style="font-size: 15px; color: #333; font-family: Arial, sans-serif;">123 Road State,
+                                Country</span>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Save contact button -->
-            <div class="save-button">
-                <button class="save-btn">SAVE CONTACT</button>
+
+            <!-- Save Contact Button (Bottom Right) -->
+            <div style="position: absolute; bottom: 0; right: 180px;">
+                <button
+                    style="background: linear-gradient(to right, #1a9b94, #20B2AA); color: white; border: none; padding: 16px 36px; font-size: 15px; font-weight: bold; cursor: pointer; text-transform: uppercase; letter-spacing: 1.5px; box-shadow: 0 6px 20px rgba(32, 178, 170, 0.4); transition: all 0.3s; min-width: 200px; border-top-left-radius: 24px; border-top-right-radius: 24px; font-family: Arial, sans-serif;">
+                    SAVE CONTACT
+                </button>
             </div>
         </div>
-        <div class="side-circle">
-            <div class="circle"></div>
+
+        <!-- RIGHT EDGE - Circular Accent -->
+        <div
+            style="width: 5%; height: 100%; display: flex; align-items: center; justify-content: center; position: relative; background: white; border-radius: 0 16px 16px 0;">
+            <div
+                style="width: 50px; height: 260px; background: #20B2AA; border-radius: 125px 0 0 125px; border: 12px solid #d1d5db; border-right: 0; box-shadow: -2px 0 8px rgba(0, 0, 0, 0.05);">
+            </div>
         </div>
     </div>
+
 </body>
 
 </html>
